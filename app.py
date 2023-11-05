@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # instructions: - run the export once, and then flask run after each  ctrl+C
-# export FLASK_RUN_PORT=5001
+# export FLASK_RUN_PORT=5002
 # flask run
 
 # 127.0.0.1:5002/getRestaurants?location=irvine&imageUrl=https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Chicken_Nuggets.jpg/800px-Chicken_Nuggets.jpg
@@ -33,7 +33,7 @@ def hackfunc():
 
 # 127.0.0.1:5000/getRestaurants?location=irvine&imageUrl={url}
 @app.route("/getRestaurantsByFoodType")
-def hackfunc():
+def hackfunc1():
 
 	location = request.args.get('location')
 	foodType = request.args.get('foodType')
